@@ -8,8 +8,8 @@ function add(n){
 
 
 let m=0;
-document.querySelector('#score').innerHTML='';
 function score(){
+    document.querySelector('#score').innerHTML='';
     n=correct.length
     for(let i=0; i<list.length;i++){
         if (list[i].value===correct[i]){
@@ -31,3 +31,4 @@ document.addEventListener("DOMContentLoaded",function(){
     document.querySelector('#click').onclick=score;
 
 });
+
