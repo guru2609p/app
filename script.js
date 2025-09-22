@@ -9,7 +9,6 @@ function add(n){
 
 let m=0;
 function score(){
-    document.querySelector('#score').innerHTML='';
     n=correct.length
     for(let i=0; i<list.length;i++){
         if (list[i].value===correct[i]){
@@ -17,6 +16,7 @@ function score(){
         }
     }
     document.querySelector('#score').innerHTML=`${m}/${n}`;
+    document.getElementById('click').disabled=true;
 };
 
 
@@ -31,4 +31,5 @@ document.addEventListener("DOMContentLoaded",function(){
     document.querySelector('#click').onclick=score;
 
 });
+
 
