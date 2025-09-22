@@ -8,7 +8,7 @@ function add(n){
 
 
 let m=0;
-
+document.querySelector('#score').innerHTML='';
 function score(){
     n=correct.length
     for(let i=0; i<list.length;i++){
@@ -29,4 +29,5 @@ document.addEventListener("DOMContentLoaded",function(){
     document.querySelector('#four').onchange=add('four');
     document.querySelector('#five').onchange=add('five');
     document.querySelector('#click').onclick=score;
+
 });
